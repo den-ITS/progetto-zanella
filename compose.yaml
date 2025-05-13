@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: helloweb        # nome personalizzato per l'immagine
+    container_name: backend-container
+    ports:
+      - "3001:3001"                  # HOST:CONTAINER → 3001 sulla tua macchina
+    restart: unless-stopped         
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: helloweb-f        
+    container_name: frontend-container
+    ports:
+      - "8080:80"                   
+    restart: unless-stopped
