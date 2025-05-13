@@ -1,10 +1,10 @@
 # Docker Compose - Esercizio: Hello API
 
-Per creare un ambiente Docker Compose con un back-end che restituisce "Hello API" e un front-end che lo mostra, dovremo definire due servizi: uno per il back-end (che esporrà una semplice API) e uno per il front-end (che consuma quella API e la mostra).
+Per creare un ambiente Docker Compose con un back-end che restituisce "Hello API" e un front-end che lo mostra, bisogna definire due servizi: uno per il back-end (che esporrà una semplice API) e uno per il front-end (che consuma quella API e la mostra).
 
 ### 1. Back-end (API)
 
-Useremo un'applicazione Node.js per il back-end. Creeremo un'API REST che restituisce "Hello API" quando viene effettuata una richiesta GET.
+Si crea un'applicazione Node.js per il back-end. Poi un'API REST che restituisce "Hello API" quando viene effettuata una richiesta GET.
 
 ### 2. Front-end (UI)
 
